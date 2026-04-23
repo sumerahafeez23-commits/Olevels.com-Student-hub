@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h2>💬 Chat</h2>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <div class="container">
+    <div id="chatBox"></div>
+
+    <form onsubmit="event.preventDefault(); sendMessage();">
+      <input type="text" id="message" placeholder="Type message..." required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
