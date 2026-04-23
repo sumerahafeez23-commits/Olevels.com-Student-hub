@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h2>📊 Prediction</h2>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <div class="container">
+    <h2>Exam Prediction</h2>
+
+    <form onsubmit="event.preventDefault(); predict();">
+      <label>Preparation Level (1–10)</label>
+      <input type="number" id="level" min="1" max="10" required>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <h3 id="result"></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
